@@ -14,4 +14,14 @@ export default defineConfig({
     { path: '/user/profile', component: '@/pages/User/UserProfile.jsx',title:"用户详情"}
   ],
   fastRefresh: {},
+
+  // 参 https://umijs.org/zh-CN/config#proxy
+  // 访问http://localhost:8000/jsonplaceholder/users http://localhost:8000/jsonplaceholder/posts
+  proxy: {
+    '/jsonplaceholder': {
+      'pathRewrite': { '^/jsonplaceholder' : '' },
+      'changeOrigin': true,
+      'target': 'http://jsonplaceholder.typicode.com/',
+    },
+  },
 });
