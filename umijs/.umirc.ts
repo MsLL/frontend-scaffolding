@@ -26,5 +26,9 @@ export default defineConfig({
   },
   
   // yarn build编译输出目录，默认就是dist目录
-  // outputPath:"dist"
+  // outputPath:"dist",
+
+  // 配置是否让build生成的文件包含hash后缀，通常用于增量发布和避免浏览器加载缓存。
+  // yarn build后看dist目录的文件名。注：html 文件始终没有 hash
+  // hash:true
 });
