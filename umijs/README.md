@@ -31,4 +31,5 @@ yarn run umi dev
 ## more
 
 https://umijs.org/zh-CN/docs/getting-started#%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83
-
+# 参考资料
+bilibili umijs基础教程 https://www.bilibili.com/video/BV1Ct4y1274w
