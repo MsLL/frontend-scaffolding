@@ -24,4 +24,7 @@ export default defineConfig({
       'target': 'http://jsonplaceholder.typicode.com/',
     },
   },
+  
+  // yarn build编译输出目录，默认就是dist目录
+  // outputPath:"dist"
 });
